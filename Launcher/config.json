@@ -1,4 +1,4 @@
-{
+﻿{
   // this configuration file works by first loading all top-level
   // configuration items and then will load the specified environment
   // on top, this provides a layering affect. environment names can be
@@ -8,15 +8,16 @@
 
   "environment": "backtesting", // "live-paper", "backtesting", "live-interactive", "live-interactive-iqfeed"
 
-  // algorithm class selector
-  "algorithm-type-name": "BasicTemplateFrameworkAlgorithm",
+  // algorithm class selectorß
+    "algorithm-type-name": "CAPEAlgorithm",
 
   // Algorithm language selector - options CSharp, FSharp, VisualBasic, Python, Java
-  "algorithm-language": "CSharp",
+  //"algorithm-language": "CSharp",
+    "algorithm-language": "Python",
 
   //Physical DLL location
-  "algorithm-location": "QuantConnect.Algorithm.CSharp.dll",
-  //"algorithm-location": "../../../Algorithm.Python/BasicTemplateFrameworkAlgorithm.py",
+  //"algorithm-location": "QuantConnect.Algorithm.CSharp.dll",
+    "algorithm-location": "../../../Algorithm.Python/CAPEAlgorithm.py",
   //"algorithm-location": "QuantConnect.Algorithm.FSharp.dll",
   //"algorithm-location": "QuantConnect.Algorithm.VisualBasic.dll",
   //"algorithm-location": "QuantConnect.Algorithm.Java.dll",
@@ -25,7 +26,8 @@
   //"composer-dll-directory": ".",
 
   // engine
-  "data-folder": "../../../Data/",
+  //"data-folder": "../../../Data/",
+  "data-folder": "../../../../../../OneDrive - Funds_SA/Data/",
 
   // handlers
   "log-handler": "QuantConnect.Logging.CompositeLogHandler",
@@ -53,8 +55,8 @@
   "transaction-log": "",
 
   // To get your api access token go to quantconnect.com/account
-  "job-user-id": "0",
-  "api-access-token": "",
+  "job-user-id": "79944",
+  "api-access-token": "a2a72c714b33aa1918fdcf6ac4e0a371",
 
   // live data configuration
   "live-data-url": "ws://www.quantconnect.com/api/v2/live/data/",
